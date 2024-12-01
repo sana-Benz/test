@@ -1,13 +1,13 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
-
+import { base_url } from './baseUrl';
 
 function App() {
   const [backEndData, setBackEndData] = useState({ users: [] });
 
 
   useEffect(()=>{
-    fetch("/users").then(
+    fetch(`${base_url}/users`).then(
       response => response.json()
     ).then(
       data => {
