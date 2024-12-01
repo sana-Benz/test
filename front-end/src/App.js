@@ -1,12 +1,13 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
+const API_URL = process.env.REACT_APP_API_URL;
 
 function App() {
   const [backEndData, setBackEndData] = useState({ users: [] });
 
 
   useEffect(()=>{
-    fetch("/api").then(
+    fetch("`${API_URL}`/users").then(
       response => response.json()
     ).then(
       data => {
