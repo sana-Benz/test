@@ -1,8 +1,5 @@
-# Ignore the secret.env file
-secret.env
+# Ignore environment files
+front-end/.env
+back-end/.env
+node_modules/
 
-# Ignore the logs directory
-logs/
-
-# Ignore all `.log` files
-*.log
