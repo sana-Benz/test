@@ -1,5 +1,5 @@
 # Ignore environment files
-front-end/.env
-back-end/.env
+front-end/.env.development
+front-end/.env.production
 node_modules/
 
